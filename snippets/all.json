@@ -1,0 +1,22 @@
+{
+  "note": {
+    "prefix": "note",
+    "body": "$LINE_COMMENT NOTE: [$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE, Ilshat Sultanov] ${1}",
+    "description": "Insert NOTE"
+  },
+  "todo": {
+    "prefix": "todo",
+    "body": "$LINE_COMMENT TODO: [$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE, Ilshat Sultanov] ${1}",
+    "description": "Insert TODO"
+  },
+  "fixme": {
+    "prefix": "fixme",
+    "body": "$LINE_COMMENT FIXME: [$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE, Ilshat Sultanov] ${1}",
+    "description": "Insert FIXME"
+  },
+  "uuid": {
+    "prefix": "uuid",
+    "body": "\"$UUID\"",
+    "description": "Insert random UUID"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "rr": {
+    "prefix": "rr",
+    "body": "[reagent.core :as r]",
+    "description": "Require reagent"
+  },
+  "rf": {
+    "prefix": "rf",
+    "body": "[re-frame.core :as rf]",
+    "description": "Require re-frame"
+  }
+}
