@@ -4,8 +4,8 @@ My configuration for NeoVim based on [AstroNvim](https://astronvim.com/)
 
 ## ⚡ Requirements
 
-- [Nerd Fonts](https://www.nerdfonts.com/font-downloads)-
-  [Neovim v0.9+ (_Not_ including nightly)](https://github.com/neovim/neovim/releases/tag/stable)
+- [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
+- [Neovim v0.9+ (_Not_ including nightly)](https://github.com/neovim/neovim/releases/tag/stable)
 - [Tree-sitter CLI](https://github.com/tree-sitter/tree-sitter/blob/master/cli/README.md)
 - A clipboard tool is necessary for the integration with the system clipboard
   [`:help clipboard-tool`](https://neovim.io/doc/user/provider.html#clipboard-tool)
