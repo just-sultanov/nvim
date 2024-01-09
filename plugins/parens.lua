@@ -27,6 +27,7 @@ return {
   },
   {
     "julienvincent/nvim-paredit",
+    ft = { "clojure" },
     config = function()
       local paredit = require "nvim-paredit"
       paredit.setup {
