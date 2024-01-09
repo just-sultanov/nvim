@@ -20,7 +20,7 @@ return {
       autopairs.get_rules("`")[1].not_filetypes = lisps
 
       autopairs.setup {
-        ignored_next_char = "",
+        check_ts = true,
         enable_check_bracket_line = false,
       }
     end,
