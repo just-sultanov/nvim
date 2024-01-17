@@ -1,3 +1,5 @@
+local icons = require "user.icons"
+
 return {
   -- Configure AstroNvim updates
   updater = {
@@ -70,22 +72,20 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function() end,
 
-  icons = {
-    VimIcon = "",
-    ScrollText = "",
-    GitBranch = "",
-    GitAdd = "",
-    GitChange = "",
-    GitDelete = "",
-  },
+  -- Override icons
+  icons = icons,
 
   -- NvChad like Statusline
   heirline = {
     -- define the separators between each section
     separators = {
-      left = { "", " " }, -- separator for the left side of the statusline
-      right = { " ", "" }, -- separator for the right side of the statusline
-      tab = { "", "" },
+      none = { "", "" },
+      left = { "", "  " },
+      right = { "  ", "" },
+      center = { "  ", "  " },
+      tab = { "", " " },
+      breadcrumbs = "  ",
+      path = "  ",
     },
     -- add new colors that can be used by heirline
     colors = function(hl)
