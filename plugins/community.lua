@@ -1,6 +1,7 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.color.transparent-nvim" },
+  { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
@@ -31,8 +32,8 @@ return {
   { import = "astrocommunity.pack.wgsl" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.zig" },
-  { import = "astrocommunity.project.nvim-spectre"},
   { import = "astrocommunity.programming-language-support.rest-nvim" },
+  { import = "astrocommunity.project.nvim-spectre" },
   { import = "astrocommunity.register.nvim-neoclip-lua" },
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
   { import = "astrocommunity.test.neotest" },
