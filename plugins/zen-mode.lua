@@ -4,7 +4,6 @@ return {
   "folke/zen-mode.nvim",
   cmd = "ZenMode",
   opts = {
-
     window = {
       backdrop = 1,
       width = function() return math.min(130, vim.o.columns * 0.75) end,
