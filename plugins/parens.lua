@@ -1,30 +1,4 @@
-local lisps = {
-  "clojure",
-  "fennel",
-  "lisp",
-  "scheme",
-}
-
 return {
-  {
-    "windwp/nvim-autopairs",
-    event = "InsertEnter",
-    config = function(plugin, opts)
-      -- run default AstroNvim config
-      require "plugins.configs.nvim-autopairs"(plugin, opts)
-
-      -- override nvim-autopairs plugin
-      local autopairs = require "nvim-autopairs"
-
-      autopairs.get_rules("'")[1].not_filetypes = lisps
-      autopairs.get_rules("`")[1].not_filetypes = lisps
-
-      autopairs.setup {
-        check_ts = true,
-        enable_check_bracket_line = false,
-      }
-    end,
-  },
   {
     "julienvincent/nvim-paredit",
     ft = { "clojure" },
