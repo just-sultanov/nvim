@@ -6,7 +6,7 @@ return {
     signcolumn = "auto",
     wrap = false,
     guifont = "BlexMono Nerd Font Mono:h12,IBMPlexMono:h12",
-    foldenable = false,
+    foldenable = true,
   },
   g = {
     mapleader = " ",
