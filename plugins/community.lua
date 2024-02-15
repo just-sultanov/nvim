@@ -33,7 +33,6 @@ return {
   { import = "astrocommunity.pack.wgsl" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.zig" },
-  { import = "astrocommunity.programming-language-support.rest-nvim" },
   { import = "astrocommunity.project.nvim-spectre" },
   { import = "astrocommunity.register.nvim-neoclip-lua" },
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
