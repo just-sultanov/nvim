@@ -58,8 +58,16 @@ return {
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         ["<Leader>b"] = { desc = "Buffers" },
+
         -- quick save
-        -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+        ["<C-s>"] = { ":w!<cr>", desc = "Save File" },
+        ["<C-q>"] = { ":q<cr>", desc = "Quit" },
+
+        -- zen mode
+        ["<leader>z"] = { ":ZenMode<cr>", desc = "Toggle ZenMode" },
+
+        -- neogit
+        ["<leader>gg"] = { "<cmd>Neogit cwd=%:p:h<cr>", desc = "NeoGit" },
       },
       t = {
         -- setting a mapping to false will disable it
