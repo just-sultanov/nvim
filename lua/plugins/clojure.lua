@@ -12,7 +12,7 @@ return {
       vim.g["conjure#log#botright"] = true
       vim.g["conjure#extract#context_header_lines"] = 130
       vim.g["conjure#eval#comment_prefix"] = ";; "
-      vim.g["conjure#client#clojure#nrepl#connection#auto_repl#enabled"] = true
+      vim.g["conjure#client#clojure#nrepl#connection#auto_repl#enabled"] = false
       vim.g["conjure#client#clojure#nrepl#connection#auto_repl#hidden"] = true
       vim.g["conjure#client#clojure#nrepl#connection#auto_repl#cmd"] = nil
       vim.g["conjure#client#clojure#nrepl#eval#auto_require"] = false
