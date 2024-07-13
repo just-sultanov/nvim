@@ -5,7 +5,10 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
+  -- { import = "astrocommunity.note-taking.neorg" },
+  -- { import = "astrocommunity.pack.nix" },
   { import = "astrocommunity.color.transparent-nvim" },
+  -- { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
@@ -16,7 +19,6 @@ return {
   { import = "astrocommunity.media.vim-wakatime" },
   { import = "astrocommunity.motion.flit-nvim" },
   { import = "astrocommunity.motion.harpoon" },
-  { import = "astrocommunity.note-taking.neorg" },
   { import = "astrocommunity.pack.ansible" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.cmake" },
@@ -31,7 +33,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.markdown" },
-  -- { import = "astrocommunity.pack.nix" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.tailwindcss" },
