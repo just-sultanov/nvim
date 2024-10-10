@@ -15,7 +15,8 @@ return {
       null_ls.builtins.formatting.stylua,
       null_ls.builtins.formatting.prettier,
       null_ls.builtins.diagnostics.clj_kondo,
-      null_ls.builtins.formatting.cljstyle,
+      -- null_ls.builtins.formatting.cljstyle,
+      null_ls.builtins.formatting.pg_format,
     }
     return config
   end,
