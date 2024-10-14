@@ -65,7 +65,8 @@ return {
         ["<C-q>"] = { ":q<cr>", desc = "Quit" },
 
         -- zen mode
-        ["<leader>z"] = { ":ZenMode<cr>", desc = "Toggle ZenMode" },
+        ["<leader>tz"] = { ":ZenMode<cr>", desc = "Toggle ZenMode" },
+        ["<leader>tt"] = { ":Twilight<cr>", desc = "Toggle Twilight" },
 
         -- neogit
         ["<leader>gg"] = { "<cmd>Neogit cwd=%:p:h<cr>", desc = "NeoGit" },
