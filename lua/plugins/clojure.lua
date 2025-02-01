@@ -36,9 +36,9 @@ return {
 
       vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
         group = vim.api.nvim_create_augroup("clojure_filetype", { clear = true }),
-        pattern = { ".cljstyle", ".cljfmt" },
+        pattern = { ".cljstyle", ".cljfmt", "*.jank" },
         callback = function() vim.cmd [[set ft=clojure]] end,
-        desc = "Read configs as edn",
+        desc = "Read configs as clojure",
       })
     end,
   },
