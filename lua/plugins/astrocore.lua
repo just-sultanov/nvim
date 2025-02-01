@@ -71,6 +71,9 @@ return {
         -- markdown
         ["<leader>tm"] = { ":MarkdownPreviewToggle<cr>", desc = "Toggle MarkdownPreview" },
 
+        -- asciidoctor
+        ["<leader>ta"] = { ":AsciiDocPreview<cr>", desc = "Toggle AsciiDocPreview" },
+
         -- neogit
         ["<leader>gg"] = { "<cmd>Neogit cwd=%:p:h<cr>", desc = "NeoGit" },
       },
