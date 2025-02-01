@@ -17,7 +17,7 @@ return {
       vim.g["conjure#client#clojure#nrepl#connection#auto_repl#cmd"] = nil
       vim.g["conjure#client#clojure#nrepl#eval#auto_require"] = false
       vim.g["conjure#client#clojure#nrepl#test#runner"] = "kaocha"
-      vim.g["conjure#mapping#doc_word"] = "gk"
+      vim.g["conjure#mapping#doc_word"] = { "K" }
       vim.g["conjure#eval#result_register"] = "*"
 
       vim.api.nvim_create_autocmd("BufNewFile", {
