@@ -66,7 +66,7 @@ return {
 
         -- zen mode
         ["<leader>tz"] = { ":ZenMode<cr>", desc = "Toggle ZenMode" },
-        ["<leader>tt"] = { ":Twilight<cr>", desc = "Toggle Twilight" },
+        ["<leader>th"] = { ":Twilight<cr>", desc = "Toggle Twilight" },
 
         -- markdown
         ["<leader>tm"] = { ":MarkdownPreviewToggle<cr>", desc = "Toggle MarkdownPreview" },
