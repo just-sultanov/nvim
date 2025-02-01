@@ -18,7 +18,7 @@ return {
       { prefix .. "r", "<Plug>RestNvim", desc = "Run request" },
     },
     config = function()
-      require("rest-nvim").setup {
+      require("vim.g.rest-nvim").setup {
         skip_ssl_verification = true,
       }
     end,
