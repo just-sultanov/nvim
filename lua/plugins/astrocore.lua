@@ -23,7 +23,7 @@ return {
     -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
-        guifont = "BlexMono Nerd Font Mono:h12,IBMPlexMono:h12",
+        guifont = "MonaspiceAr Nerd Font Mono:h12,BlexMono Nerd Font Mono:h12,IBMPlexMono:h12",
         relativenumber = false, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
