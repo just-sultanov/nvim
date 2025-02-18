@@ -1,10 +1,25 @@
 -- Clojure
 
+local function clerk_show()
+  local form = '(nextjournal.clerk/show! "' .. vim.fn.expand "%" .. '")'
+  vim.cmd("ConjureEval" .. form)
+end
+
+local function set_clj_test_runner() vim.g["conjure#client#clojure#nrepl#test#runner"] = "clojure" end
+local function set_cljs_test_runner() vim.g["conjure#client#clojure#nrepl#test#runner"] = "clojurescript" end
+local function set_kaocha_test_runner() vim.g["conjure#client#clojure#nrepl#test#runner"] = "kaocha" end
+
 ---@type LazySpec
 return {
   {
     "Olical/conjure",
     ft = { "clojure" },
+    keys = {
+      { "<localleader>cs", clerk_show, desc = "Clerk Show" },
+      { "<localleader>trC", set_clj_test_runner, desc = "Set `clojure.test` as test runner" },
+      { "<localleader>trS", set_cljs_test_runner, desc = "Set `clojurescript.test` as test runner" },
+      { "<localleader>trK", set_kaocha_test_runner, desc = "Set `kaocha` as test runner" },
+    },
     init = function()
       vim.g["conjure#log#hud#width"] = 1
       vim.g["conjure#log#hud#enabled"] = false
