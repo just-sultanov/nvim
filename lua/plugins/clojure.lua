@@ -13,6 +13,7 @@ local function set_kaocha_test_runner() vim.g["conjure#client#clojure#nrepl#test
 return {
   {
     "Olical/conjure",
+    branch = "main",
     ft = { "clojure" },
     keys = {
       { "<localleader>cs", clerk_show, desc = "Clerk Show" },
