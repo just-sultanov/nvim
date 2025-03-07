@@ -1,26 +1,21 @@
 -- REST Http Client
 
-local prefix = "<leader>r"
-
 ---@type LazySpec
 return {
   {
     "rest-nvim/rest.nvim",
-    ft = { "http", "json" },
-    cmd = {
-      "RestNvim",
-      "RestNvimPreview",
-      "RestNvimLast",
+    ft = { "http" },
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      opts = function(_, opts)
+        opts.ensure_installed = opts.ensure_installed or {}
+        table.insert(opts.ensure_installed, "http")
+      end,
     },
-    dependencies = { "nvim-lua/plenary.nvim" },
     keys = {
-      { prefix, desc = "RestNvim" },
-      { prefix .. "r", "<Plug>RestNvim", desc = "Run request" },
+      { "<localleader>rr", "<cmd>Rest run<cr>", desc = "Run request" },
+      { "<localleader>rl", "<cmd>Rest last<cr>", desc = "Run last request" },
+      { "<localleader>re", "<cmd>Rest env select<cr>", desc = "Select and register .env file" },
     },
-    config = function()
-      require("vim.g.rest-nvim").setup {
-        skip_ssl_verification = true,
-      }
-    end,
   },
 }
