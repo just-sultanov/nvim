@@ -16,7 +16,7 @@ return {
     config.sources = {
       -- Set a formatter
       null_ls.builtins.diagnostics.clj_kondo,
-      null_ls.builtins.diagnostics.ltrs,
+      -- null_ls.builtins.diagnostics.ltrs,
       null_ls.builtins.formatting.stylua,
       null_ls.builtins.formatting.prettier,
       null_ls.builtins.formatting.cljstyle,
