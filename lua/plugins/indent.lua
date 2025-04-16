@@ -2,5 +2,13 @@
 
 ---@type LazySpec
 return {
-  { "lukas-reineke/indent-blankline.nvim", enabled = false },
+  {
+    "folke/snacks.nvim",
+    ---@type snacks.Config
+    opts = {
+      indent = {
+        enabled = false,
+      },
+    },
+  },
 }
