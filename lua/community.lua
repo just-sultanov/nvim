@@ -28,7 +28,6 @@ return {
   { import = "astrocommunity.pack.godot" },
   { import = "astrocommunity.pack.helm" },
   { import = "astrocommunity.pack.html-css" },
-  { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.markdown" },
