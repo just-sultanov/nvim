@@ -12,6 +12,7 @@ return {
         -- install language servers
         "lua-language-server",
         "clojure-lsp",
+        "jdtls",
 
         -- install formatters
         "stylua",
